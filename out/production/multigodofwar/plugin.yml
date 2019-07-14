@@ -1,0 +1,7 @@
+name: MCGodOfWar
+author: niceyonom02
+main: godofwar.GodOfWar
+version: 1.0.0
+commands:
+  gow:
+  t:
