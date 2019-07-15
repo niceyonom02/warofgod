@@ -3,7 +3,6 @@ package godofwar;
 import datacontrol.DataContainer;
 import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
-import util.PlayerWrapper;
 import util.Schematic;
 
 import static godofwar.Status.*;
@@ -108,7 +107,7 @@ public class GameManager {
     public void forceStop(){
         initialize();
         for(Player p : Bukkit.getOnlinePlayers()){
-            p.sendMessage(chanName + "채널 강제종료");
+            p.sendMessage(chanName + "channel forcestopped");
         }
     }
 

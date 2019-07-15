@@ -21,15 +21,12 @@ import org.bukkit.event.player.PlayerQuitEvent;
 import org.bukkit.inventory.ItemStack;
 import util.PlayerWrapper;
 
-import java.util.ArrayList;
-import java.util.UUID;
-
-public class InGameEventManager implements Listener {
+public class InGameEventHandler implements Listener {
     private DataContainer dataContainer;
     private GameManager gameManager;
     private CooldownManager cooldownManager;
 
-    public InGameEventManager(DataContainer dataContainer, GameManager gameManager){
+    public InGameEventHandler(DataContainer dataContainer, GameManager gameManager) {
         this.dataContainer = dataContainer;
         this.gameManager = gameManager;
         cooldownManager = new CooldownManager();

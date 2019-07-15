@@ -1,19 +1,16 @@
 package godofwar;
 
-import ability.None;
 import channel.Channel;
 import com.sk89q.worldedit.bukkit.WorldEditPlugin;
+import datacontrol.ChannelLoader;
+import datacontrol.ChannelSaver;
 import datacontrol.DataContainer;
 import org.bukkit.Bukkit;
 import org.bukkit.Location;
 import org.bukkit.plugin.Plugin;
 import org.bukkit.plugin.java.JavaPlugin;
-import datacontrol.ChannelLoader;
-import datacontrol.ChannelSaver;
-import team.Team;
 import util.AbilityManager;
 
-import java.io.File;
 import java.util.ArrayList;
 
 public class GodOfWar extends JavaPlugin {
@@ -76,6 +73,10 @@ public class GodOfWar extends JavaPlugin {
             }
         }
         return null;
+    }
+
+    public ArrayList<Channel> getChannelList() {
+        return channelList;
     }
 
     public Location getLastCopyLocation(){

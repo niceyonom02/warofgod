@@ -8,7 +8,7 @@ import util.PlayerWrapper;
 
 import java.util.ArrayList;
 
-import static godofwar.Status.*;
+import static godofwar.Status.WAIT;
 
 public class DataContainer {
     private ArrayList<PlayerWrapper> inGamePlayerList = new ArrayList<>();
@@ -83,7 +83,7 @@ public class DataContainer {
         this.status = status;
     }
 
-    public void setPasteLOC(Location pasteLOC) {
+    protected void setPasteLOC(Location pasteLOC) {
         this.pasteLOC = pasteLOC;
     }
 

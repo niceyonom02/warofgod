@@ -3,20 +3,20 @@ package channel;
 import datacontrol.AccessManager;
 import datacontrol.DataContainer;
 import godofwar.GameManager;
-import listener.InGameEventManager;
+import listener.InGameEventHandler;
 
 public class Channel {
     private String channelName;
     private AccessManager accessManager;
     private GameManager gameManager;
-    private InGameEventManager inGameEventManager;
+    private InGameEventHandler inGameEventManager;
 
     public Channel(String chName, DataContainer dataContainer) {
         channelName = chName;
 
         gameManager = new GameManager(channelName, dataContainer);
         accessManager = new AccessManager(dataContainer);
-        inGameEventManager = new InGameEventManager(dataContainer, gameManager);
+        inGameEventManager = new InGameEventHandler(dataContainer, gameManager);
     }
 
     public String getChannelName() {

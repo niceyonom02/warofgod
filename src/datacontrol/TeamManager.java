@@ -4,6 +4,8 @@ import org.bukkit.Location;
 import team.Team;
 import util.PlayerWrapper;
 
+import java.util.ArrayList;
+
 public class TeamManager {
     private DataContainer dataContainer;
 
@@ -42,5 +44,9 @@ public class TeamManager {
     public void restoreTeamList(String key){
         dataContainer.getTeamList().clear();
         dataContainer.setTeamList(ChannelLoader.loadTeams(key));
+    }
+
+    public ArrayList<Team> getTeamList() {
+        return dataContainer.getTeamList();
     }
 }

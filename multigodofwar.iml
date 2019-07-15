@@ -21,16 +21,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$USER_HOME$/Desktop/server/plugins/FastAsyncWorldEdit-bukkit-19.07.12-5cc5ce5-1277-22.3.0.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library>
-        <CLASSES>
-          <root url="jar://$USER_HOME$/Desktop/server/plugins/WorldEdit.jar!/" />
+          <root url="jar://$USER_HOME$/Desktop/server/plugins/worldedit-bukkit-6.1.9.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
