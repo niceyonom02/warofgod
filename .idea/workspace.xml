@@ -8,13 +8,8 @@
   <component name="ChangeListManager">
     <list default="true" id="4281c2b0-20cc-477a-a865-8129bca40238" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/datacontrol/AccessManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/datacontrol/AccessManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/godofwar/GodOfWar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/godofwar/GodOfWar.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gui/ChannelList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/ChannelList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/gui/ChannelMaker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/ChannelMaker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/listener/ChannelMakerEventHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/listener/ChannelMakerHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/listener/TeamMakerEventHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/listener/TeamMakerHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/listener/generalGUIEventHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/listener/GeneralGUIHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/listener/ChannelMakerHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/listener/ChannelMakerHandler.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -32,7 +27,7 @@
         <entry file="file://$PROJECT_DIR$/src/listener/GeneralGUIHandler.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="305">
-              <caret line="33" column="34" lean-forward="true" selection-start-line="33" selection-start-column="34" selection-end-line="33" selection-end-column="34" />
+              <caret line="33" column="36" lean-forward="true" selection-start-line="33" selection-start-column="36" selection-end-line="33" selection-end-column="36" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#227#228#0" expanded="true" />
@@ -57,11 +52,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/gui/ChannelMaker.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="451">
-              <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+            <state relative-caret-position="611">
+              <caret line="67" lean-forward="true" selection-start-line="67" selection-end-line="67" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1784#1785#0" expanded="true" />
+                <element signature="e#2194#2195#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -119,12 +114,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/listener/ChannelMakerHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="56">
-              <caret line="97" column="44" selection-start-line="97" selection-start-column="44" selection-end-line="97" selection-end-column="44" />
+            <state relative-caret-position="545">
+              <caret line="132" column="47" lean-forward="true" selection-start-line="132" selection-start-column="47" selection-end-line="132" selection-end-column="47" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#4427#4428#0" expanded="true" />
-                <element signature="e#4514#4515#0" expanded="true" />
+                <element signature="e#4737#4738#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -146,7 +140,7 @@
         <entry file="file://$PROJECT_DIR$/src/datacontrol/AccessManager.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="347">
-              <caret line="62" column="5" selection-start-line="62" selection-start-column="5" selection-end-line="62" selection-end-column="5" />
+              <caret line="61" column="5" selection-start-line="61" selection-start-column="5" selection-end-line="61" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -356,7 +350,7 @@
       <workItem from="1563145226785" duration="5317000" />
       <workItem from="1563153860316" duration="2683000" />
       <workItem from="1563198878702" duration="767000" />
-      <workItem from="1563229884164" duration="3524000" />
+      <workItem from="1563229884164" duration="3907000" />
     </task>
     <task id="LOCAL-00001" summary="Second commit">
       <created>1563199119192</created>
@@ -365,14 +359,22 @@
       <option name="project" value="LOCAL" />
       <updated>1563199119192</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="implemented ChannelMake, ChannelMakerHandler">
+      <created>1563233617775</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1563233617777</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="82892000" />
+    <option name="totallyTimeSpent" value="83275000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1785235" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -410,7 +412,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Second commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Second commit" />
+    <MESSAGE value="implemented ChannelMake, ChannelMakerHandler" />
+    <option name="LAST_COMMIT_MESSAGE" value="implemented ChannelMake, ChannelMakerHandler" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -772,7 +775,7 @@
     <entry file="file://$PROJECT_DIR$/src/datacontrol/AccessManager.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="347">
-          <caret line="62" column="5" selection-start-line="62" selection-start-column="5" selection-end-line="62" selection-end-column="5" />
+          <caret line="61" column="5" selection-start-line="61" selection-start-column="5" selection-end-line="61" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -804,7 +807,7 @@
     <entry file="file://$PROJECT_DIR$/src/listener/GeneralGUIHandler.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="305">
-          <caret line="33" column="34" lean-forward="true" selection-start-line="33" selection-start-column="34" selection-end-line="33" selection-end-column="34" />
+          <caret line="33" column="36" lean-forward="true" selection-start-line="33" selection-start-column="36" selection-end-line="33" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#227#228#0" expanded="true" />
@@ -815,23 +818,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/gui/ChannelMaker.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="451">
-          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+        <state relative-caret-position="611">
+          <caret line="67" lean-forward="true" selection-start-line="67" selection-end-line="67" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1784#1785#0" expanded="true" />
+            <element signature="e#2194#2195#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/listener/ChannelMakerHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="56">
-          <caret line="97" column="44" selection-start-line="97" selection-start-column="44" selection-end-line="97" selection-end-column="44" />
+        <state relative-caret-position="545">
+          <caret line="132" column="47" lean-forward="true" selection-start-line="132" selection-start-column="47" selection-end-line="132" selection-end-column="47" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#4427#4428#0" expanded="true" />
-            <element signature="e#4514#4515#0" expanded="true" />
+            <element signature="e#4737#4738#0" expanded="true" />
           </folding>
         </state>
       </provider>

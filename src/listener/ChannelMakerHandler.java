@@ -114,14 +114,18 @@ public class ChannelMakerHandler implements Listener {
                     break;
                 case "max":
                     try {
-                        maxMember = Integer.parseInt(e.getMessage());
+                        if (Integer.valueOf(e.getMessage()) > 0) {
+                            maxMember = Integer.parseInt(e.getMessage());
+                        }
                     } catch (ArithmeticException ex) {
                         //정수만 써주세요
                     }
                     break;
                 case "min":
                     try {
-                        minMember = Integer.parseInt(e.getMessage());
+                        if (Integer.valueOf(e.getMessage()) > 1) {
+                            minMember = Integer.parseInt(e.getMessage());
+                        }
                     } catch (ArithmeticException ex) {
                         //정수만 써주세요
                     }

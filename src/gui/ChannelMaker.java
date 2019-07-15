@@ -8,6 +8,8 @@ import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 
+import java.util.ArrayList;
+
 public class ChannelMaker {
     private String makerName = "ChannelMaker";
     Inventory inventory;
@@ -25,13 +27,15 @@ public class ChannelMaker {
     }
 
     public void setItem(String chName, int max, int min) {
+        ArrayList<String> lore = new ArrayList<>();
+
         ItemStack item = new ItemStack(Material.SIGN_POST);
         ItemMeta meta = item.getItemMeta();
-
         meta.setDisplayName("ChannelName");
 
         if (!(chName == null)) {
-
+            lore.add(chName);
+            meta.setLore(lore);
         }
         item.setItemMeta(meta);
         inventory.setItem(0, item);
@@ -41,6 +45,11 @@ public class ChannelMaker {
         meta = item.getItemMeta();
 
         meta.setDisplayName("Max-Member");
+        if (max > min) {
+            lore.clear();
+            lore.add(String.valueOf(max));
+            meta.setLore(lore);
+        }
         item.setItemMeta(meta);
         inventory.setItem(1, item);
 
@@ -49,6 +58,11 @@ public class ChannelMaker {
         meta = item.getItemMeta();
 
         meta.setDisplayName("Min-Member");
+        if (min > 1) {
+            lore.clear();
+            lore.add(String.valueOf(min));
+            meta.setLore(lore);
+        }
         item.setItemMeta(meta);
         inventory.setItem(2, item);
 
