@@ -1,6 +1,6 @@
 package gui;
 
-import listener.ChannelMakerEventHandler;
+import listener.ChannelMakerHandler;
 import org.bukkit.Bukkit;
 import org.bukkit.Material;
 import org.bukkit.event.inventory.InventoryType;
@@ -9,30 +9,30 @@ import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 
 public class ChannelMaker {
-    public static String makerName = "ChannelMaker";
+    private String makerName = "ChannelMaker";
     Inventory inventory;
-    private ChannelMakerEventHandler evHandler;
+    private ChannelMakerHandler evHandler;
 
     public ChannelMaker() {
         inventory = Bukkit.createInventory(null, InventoryType.HOPPER, makerName);
-        setItem();
+        setItem(null, 0, 0);
 
-        evHandler = new ChannelMakerEventHandler(this);
+        evHandler = new ChannelMakerHandler(this);
     }
 
     public static ChannelMaker getMaker() {
         return new ChannelMaker();
     }
 
-    public static String getMakerName() {
-        return makerName;
-    }
-
-    public void setItem() {
+    public void setItem(String chName, int max, int min) {
         ItemStack item = new ItemStack(Material.SIGN_POST);
         ItemMeta meta = item.getItemMeta();
 
         meta.setDisplayName("ChannelName");
+
+        if (!(chName == null)) {
+
+        }
         item.setItemMeta(meta);
         inventory.setItem(0, item);
 

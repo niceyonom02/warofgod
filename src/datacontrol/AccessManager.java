@@ -2,7 +2,6 @@ package datacontrol;
 
 import ability.None;
 import channel.Channel;
-import godofwar.GodOfWar;
 import org.bukkit.entity.Player;
 import team.Team;
 import util.PlayerWrapper;
@@ -60,10 +59,6 @@ public class AccessManager {
                 //}
             }
         }
-    }
-
-    public void registerChannel(Channel channel) {
-        GodOfWar.getInstance().getChannelList().add(channel);
     }
 
     public void registerTeam(Channel channel, Team team) {

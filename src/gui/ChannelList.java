@@ -23,7 +23,7 @@ public class ChannelList {
         updateItem();
     }
 
-    public ChannelList getChannelList() {
+    public static ChannelList getChannelList() {
         return channelList;
     }
 

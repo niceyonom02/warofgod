@@ -90,4 +90,8 @@ public class GodOfWar extends JavaPlugin {
     public WorldEditPlugin getWorldEdit(){
         return worldEdit;
     }
+
+    public void registerChannel(Channel channel) {
+        GodOfWar.getInstance().getChannelList().add(channel);
+    }
 }
