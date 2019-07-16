@@ -63,7 +63,10 @@ public class InGameCommand implements CommandExecutor {
                 }
             }
         }
-
         return false;
+    }
+
+    public void showUnknown(Player player) {
+        player.sendMessage("Unknown command. Type \"/help\" for help");
     }
 }

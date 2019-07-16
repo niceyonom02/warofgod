@@ -7,19 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4281c2b0-20cc-477a-a865-8129bca40238" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/listener/ChannelMenuHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/listener/TeamListHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/channel/Channel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/channel/Channel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/datacontrol/AccessManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/datacontrol/AccessManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/godofwar/GodOfWar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/godofwar/GodOfWar.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/godofwar/InGameCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/godofwar/InGameCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gui/ChannelList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/ChannelList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gui/ChannelMaker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/ChannelMaker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gui/ChannelMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/ChannelMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gui/TeamList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/TeamList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/listener/GeneralGUIHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/listener/GeneralGUIHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/listener/TeamMakerHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/listener/TeamMakerHandler.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -61,13 +50,15 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/godofwar/InGameCommand.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-440">
-              <caret line="17" column="33" lean-forward="true" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
+            <state relative-caret-position="513">
+              <caret line="66" column="5" lean-forward="true" selection-start-line="66" selection-start-column="5" selection-end-line="66" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#2962#2963#0" expanded="true" />
+                <element signature="e#3000#3001#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -103,7 +94,7 @@
         <entry file="file://$PROJECT_DIR$/src/gui/ChannelList.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="68">
-              <caret line="31" column="5" lean-forward="true" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
+              <caret line="32" column="5" lean-forward="true" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#839#840#0" expanded="true" />
@@ -119,7 +110,7 @@
         <entry file="file://$PROJECT_DIR$/src/listener/ChannelMenuHandler.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="436">
-              <caret line="31" column="27" selection-start-line="31" selection-start-column="27" selection-end-line="31" selection-end-column="27" />
+              <caret line="31" column="29" selection-start-line="31" selection-start-column="29" selection-end-line="31" selection-end-column="29" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -159,11 +150,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/listener/TeamListHandler.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="387">
-              <caret line="48" column="41" selection-start-line="48" selection-start-column="41" selection-end-line="48" selection-end-column="41" />
+              <caret line="47" column="43" selection-start-line="47" selection-start-column="43" selection-end-line="47" selection-end-column="43" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -239,11 +230,11 @@
         <option value="$PROJECT_DIR$/src/datacontrol/AccessManager.java" />
         <option value="$PROJECT_DIR$/src/listener/ChannelMenuHandler.java" />
         <option value="$PROJECT_DIR$/src/listener/CommandListener.java" />
-        <option value="$PROJECT_DIR$/src/godofwar/InGameCommand.java" />
         <option value="$PROJECT_DIR$/src/gui/TeamList.java" />
         <option value="$PROJECT_DIR$/src/gui/ChannelList.java" />
         <option value="$PROJECT_DIR$/src/listener/GeneralGUIHandler.java" />
         <option value="$PROJECT_DIR$/src/listener/TeamListHandler.java" />
+        <option value="$PROJECT_DIR$/src/godofwar/InGameCommand.java" />
       </list>
     </option>
   </component>
@@ -332,6 +323,9 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$USER_HOME$/Desktop/server/plugins/worldedit-bukkit-6.1.9.jar!/" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -374,7 +368,7 @@
       <workItem from="1563153860316" duration="2683000" />
       <workItem from="1563198878702" duration="767000" />
       <workItem from="1563229884164" duration="9618000" />
-      <workItem from="1563240608117" duration="1066000" />
+      <workItem from="1563240608117" duration="1910000" />
     </task>
     <task id="LOCAL-00001" summary="Second commit">
       <created>1563199119192</created>
@@ -397,15 +391,21 @@
       <option name="project" value="LOCAL" />
       <updated>1563234128839</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Foobar">
+      <created>1563241713830</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1563241713831</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="90052000" />
+    <option name="totallyTimeSpent" value="90896000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18120806" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -445,7 +445,8 @@
     <MESSAGE value="Second commit" />
     <MESSAGE value="implemented ChannelMake, ChannelMakerHandler" />
     <MESSAGE value="Fix logic error" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix logic error" />
+    <MESSAGE value="Foobar" />
+    <option name="LAST_COMMIT_MESSAGE" value="Foobar" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -821,23 +822,13 @@
     <entry file="file://$PROJECT_DIR$/src/gui/ChannelList.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
-          <caret line="31" column="5" lean-forward="true" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
+          <caret line="32" column="5" lean-forward="true" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#839#840#0" expanded="true" />
             <element signature="e#891#892#0" expanded="true" />
             <element signature="e#935#936#0" expanded="true" />
             <element signature="e#1611#1612#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/godofwar/InGameCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-440">
-          <caret line="17" column="33" lean-forward="true" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -888,16 +879,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/listener/ChannelMenuHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="436">
-          <caret line="31" column="27" selection-start-line="31" selection-start-column="27" selection-end-line="31" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/listener/GeneralGUIHandler.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="328">
@@ -910,12 +891,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/listener/ChannelMenuHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="436">
+          <caret line="31" column="29" selection-start-line="31" selection-start-column="29" selection-end-line="31" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/listener/TeamListHandler.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="387">
-          <caret line="48" column="41" selection-start-line="48" selection-start-column="41" selection-end-line="48" selection-end-column="41" />
+          <caret line="47" column="43" selection-start-line="47" selection-start-column="43" selection-end-line="47" selection-end-column="43" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/godofwar/InGameCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="66" column="5" lean-forward="true" selection-start-line="66" selection-start-column="5" selection-end-line="66" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2962#2963#0" expanded="true" />
+            <element signature="e#3000#3001#0" expanded="true" />
           </folding>
         </state>
       </provider>
