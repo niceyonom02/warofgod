@@ -35,7 +35,6 @@ public class TeamList {
 
     public void updateItem() {
         ItemStack item = new ItemStack(Material.EMERALD);
-        ;
         ItemMeta meta;
         ArrayList<String> lore;
 

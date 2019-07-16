@@ -37,9 +37,7 @@ public class TeamMakerHandler implements Listener {
         }
 
         if (e.getInventory() == teamMaker.getInventory()) {
-            if (closedByPlayer = true) {
-                Bukkit.getPluginManager().registerEvents(this, GodOfWar.getInstance());
-            } else {
+            if (!closedByPlayer) {
                 closedByPlayer = true;
             }
         }
@@ -110,14 +108,17 @@ public class TeamMakerHandler implements Listener {
                     prefix = e.getMessage();
             }
             teamMaker.setItem(teamName, prefix);
+            behavior.put(player.getUniqueId(), "wait");
             player.openInventory(teamMaker.getInventory());
         }
     }
 
     @EventHandler
     public void onQuit(PlayerQuitEvent e) {
-        behavior.clear();
-        HandlerList.unregisterAll(this);
+        if(behavior.containsKey(e.getPlayer().getUniqueId())){
+            behavior.clear();
+            HandlerList.unregisterAll(this);
+        }
     }
 
     private boolean validate() {

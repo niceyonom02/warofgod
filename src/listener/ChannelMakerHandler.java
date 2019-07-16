@@ -32,6 +32,8 @@ public class ChannelMakerHandler implements Listener {
 
     public ChannelMakerHandler(ChannelMaker channelMaker) {
         this.channelMaker = channelMaker;
+
+        Bukkit.getPluginManager().registerEvents(this, GodOfWar.getInstance());
     }
 
     @EventHandler
@@ -41,9 +43,7 @@ public class ChannelMakerHandler implements Listener {
         }
 
         if (e.getInventory() == channelMaker.getInventory()) {
-            if (closedByPlayer = true) {
-                Bukkit.getPluginManager().registerEvents(this, GodOfWar.getInstance());
-            } else {
+            if (!closedByPlayer) {
                 closedByPlayer = true;
             }
         }
@@ -131,14 +131,17 @@ public class ChannelMakerHandler implements Listener {
                     }
             }
             channelMaker.setItem(channelName, maxMember, minMember);
+            behavior.put(player.getUniqueId(), "wait");
             player.openInventory(channelMaker.getInventory());
         }
     }
 
     @EventHandler
     public void onQuit(PlayerQuitEvent e) {
-        behavior.clear();
-        HandlerList.unregisterAll(this);
+        if(behavior.containsKey(e.getPlayer().getUniqueId())){
+            behavior.clear();
+            HandlerList.unregisterAll(this);
+        }
     }
 
     private boolean validate() {
