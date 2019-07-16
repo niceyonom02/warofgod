@@ -4,12 +4,12 @@ import channel.Channel;
 import com.sk89q.worldedit.bukkit.WorldEditPlugin;
 import datacontrol.ChannelLoader;
 import datacontrol.ChannelSaver;
-import datacontrol.DataContainer;
+import gui.ChannelList;
+import gui.MainMenu;
 import org.bukkit.Bukkit;
 import org.bukkit.Location;
 import org.bukkit.plugin.Plugin;
 import org.bukkit.plugin.java.JavaPlugin;
-import util.AbilityManager;
 
 import java.util.ArrayList;
 
@@ -36,14 +36,8 @@ public class GodOfWar extends JavaPlugin {
             channelList = ChannelLoader.load();
         }
 
-        mt();
-    }
-
-    public void mt(){
-        DataContainer dataContainer = new DataContainer(1, 1, new ArrayList<>(), AbilityManager.getAbilityList(), Bukkit.getWorld("world").getSpawnLocation(), Bukkit.getWorld("world").getSpawnLocation(), Bukkit.getWorld("world").getSpawnLocation());
-
-        Channel channel = new Channel("ch", dataContainer);
-        channelList.add(channel);
+        new MainMenu();
+        new ChannelList();
     }
 
     private void setupWorldEdit() {

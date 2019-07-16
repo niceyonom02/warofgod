@@ -106,16 +106,25 @@ public class ChannelMakerHandler implements Listener {
         Player player = e.getPlayer();
 
         if (behavior.containsKey(player.getUniqueId())) {
+            e.setCancelled(true);
             String value = behavior.get(player.getUniqueId());
 
             switch (value) {
                 case "name":
                     channelName = e.getMessage();
+                    channelMaker.setItem(channelName, maxMember, minMember);
+                    behavior.put(player.getUniqueId(), "wait");
+                    player.openInventory(channelMaker.getInventory());
                     break;
                 case "max":
                     try {
                         if (Integer.valueOf(e.getMessage()) > 0) {
                             maxMember = Integer.parseInt(e.getMessage());
+                            channelMaker.setItem(channelName, maxMember, minMember);
+                            behavior.put(player.getUniqueId(), "wait");
+                            player.openInventory(channelMaker.getInventory());
+                        } else {
+
                         }
                     } catch (ArithmeticException ex) {
                         //정수만 써주세요
@@ -125,14 +134,16 @@ public class ChannelMakerHandler implements Listener {
                     try {
                         if (Integer.valueOf(e.getMessage()) > 1) {
                             minMember = Integer.parseInt(e.getMessage());
+                            channelMaker.setItem(channelName, maxMember, minMember);
+                            behavior.put(player.getUniqueId(), "wait");
+                            player.openInventory(channelMaker.getInventory());
+                        } else {
+
                         }
                     } catch (ArithmeticException ex) {
                         //정수만 써주세요
                     }
             }
-            channelMaker.setItem(channelName, maxMember, minMember);
-            behavior.put(player.getUniqueId(), "wait");
-            player.openInventory(channelMaker.getInventory());
         }
     }
 

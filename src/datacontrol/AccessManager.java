@@ -73,8 +73,19 @@ public class AccessManager {
         dataContainer.getTeamList().add(team);
     }
 
-    public void unregisterTeam(Team team) {
-        dataContainer.getTeamList().remove(team);
+    public void unregisterTeam(String teamName) {
+        Team teamToDelete = null;
+
+        for (Team team : dataContainer.getTeamList()) {
+            if (team.getTeamName().equalsIgnoreCase(teamName)) {
+                teamToDelete = team;
+                break;
+            }
+        }
+
+        if (teamToDelete != null) {
+            dataContainer.getTeamList().remove(teamToDelete);
+        }
     }
 
 

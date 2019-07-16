@@ -1,6 +1,7 @@
 package gui;
 
 import channel.Channel;
+import listener.ChannelMenuHandler;
 import org.bukkit.Bukkit;
 import org.bukkit.Material;
 import org.bukkit.inventory.Inventory;
@@ -17,13 +18,15 @@ public class ChannelMenu {
         this.channel = channel;
         title = channel.getChannelName() + " Channel menu";
         inventory = Bukkit.createInventory(null, 27, title);
+
+        new ChannelMenuHandler(channel);
         teamList = new TeamList(channel);
 
         setItem();
     }
 
     public void setItem() {
-        ItemStack item = new ItemStack(Material.SIGN_POST);
+        ItemStack item = new ItemStack(Material.SIGN);
         ItemMeta meta = item.getItemMeta();
 
         meta.setDisplayName("TeamList / Remove team");

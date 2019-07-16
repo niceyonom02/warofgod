@@ -28,6 +28,8 @@ public class TeamMakerHandler implements Listener {
 
     public TeamMakerHandler(TeamMaker teamMaker) {
         this.teamMaker = teamMaker;
+
+        Bukkit.getPluginManager().registerEvents(this, GodOfWar.getInstance());
     }
 
     @EventHandler
@@ -98,18 +100,26 @@ public class TeamMakerHandler implements Listener {
         Player player = e.getPlayer();
 
         if (behavior.containsKey(player.getUniqueId())) {
+            e.setCancelled(true);
             String value = behavior.get(player.getUniqueId());
 
             switch (value) {
                 case "name":
-                    teamName = e.getMessage();
+                    if (!e.getMessage().isEmpty()) {
+                        teamName = e.getMessage();
+                        teamMaker.setItem(teamName, prefix);
+                        behavior.put(player.getUniqueId(), "wait");
+                        player.openInventory(teamMaker.getInventory());
+                    }
                     break;
-                case "prefx":
-                    prefix = e.getMessage();
+                case "prefix":
+                    if (!e.getMessage().isEmpty()) {
+                        prefix = e.getMessage();
+                        teamMaker.setItem(teamName, prefix);
+                        behavior.put(player.getUniqueId(), "wait");
+                        player.openInventory(teamMaker.getInventory());
+                    }
             }
-            teamMaker.setItem(teamName, prefix);
-            behavior.put(player.getUniqueId(), "wait");
-            player.openInventory(teamMaker.getInventory());
         }
     }
 

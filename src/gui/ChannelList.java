@@ -37,8 +37,9 @@ public class ChannelList {
     }
 
     private void updateItem() {
+        inventory.clear();
+
         ItemStack item = new ItemStack(Material.DIAMOND);
-        ;
         ItemMeta meta;
         ArrayList<String> lore;
 

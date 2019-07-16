@@ -28,7 +28,7 @@ public class TeamListHandler implements Listener {
             return;
         }
 
-        if (!(e.getCurrentItem() == null || e.getCurrentItem().getType().equals(Material.AIR))) {
+        if (e.getCurrentItem() == null || e.getCurrentItem().getType().equals(Material.AIR)) {
             return;
         }
 
@@ -46,7 +46,7 @@ public class TeamListHandler implements Listener {
                         Team team = channel.getAccessManager().searchTeam(itemMeta.getDisplayName());
 
                         if (team != null) {
-                            channel.getAccessManager().unregisterTeam(team);
+                            channel.getAccessManager().unregisterTeam(team.getTeamName());
                         }
                     }
                 }

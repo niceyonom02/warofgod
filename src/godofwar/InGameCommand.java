@@ -2,6 +2,7 @@ package godofwar;
 
 import ability.Ability;
 import channel.Channel;
+import gui.MainMenu;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
@@ -23,6 +24,8 @@ public class InGameCommand implements CommandExecutor {
                         showUnknown(player);
                         return false;
                     }
+
+                    player.openInventory(MainMenu.getMainMenu().getInventory());
                     return true;
                 } else if (arg[0].equalsIgnoreCase("scsave")) {
                     if (!(player.isOp())) {

@@ -2,7 +2,7 @@ package listener;
 
 import channel.Channel;
 import godofwar.GodOfWar;
-import gui.ChannelMaker;
+import gui.TeamMaker;
 import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
@@ -33,9 +33,9 @@ public class ChannelMenuHandler implements Listener {
                 player.closeInventory();
                 player.openInventory(channel.getChannelMenu().getTeamList().getInventory());
             } else if (slot == 13) {
-                ChannelMaker channelMaker = ChannelMaker.getMaker();
+                TeamMaker teamMaker = TeamMaker.getMaker(channel);
                 player.closeInventory();
-                player.openInventory(channelMaker.getInventory());
+                player.openInventory(teamMaker.getInventory());
             }
         }
     }

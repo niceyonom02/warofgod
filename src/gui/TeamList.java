@@ -3,6 +3,7 @@ package gui;
 import channel.Channel;
 import datacontrol.InformationManager;
 import godofwar.GodOfWar;
+import listener.TeamListHandler;
 import org.bukkit.Bukkit;
 import org.bukkit.Material;
 import org.bukkit.inventory.Inventory;
@@ -21,6 +22,8 @@ public class TeamList {
         title = channel.getChannelName() + " Team list";
         inventory = Bukkit.createInventory(null, 54, title);
 
+        new TeamListHandler(channel);
+
         synchronize();
     }
 
@@ -34,6 +37,8 @@ public class TeamList {
     }
 
     public void updateItem() {
+        inventory.clear();
+
         ItemStack item = new ItemStack(Material.EMERALD);
         ItemMeta meta;
         ArrayList<String> lore;

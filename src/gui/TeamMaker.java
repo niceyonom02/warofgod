@@ -31,7 +31,7 @@ public class TeamMaker {
 
     public void setItem(String teamName, String prefix) {
         ArrayList<String> lore = new ArrayList<>();
-        ItemStack item = new ItemStack(Material.SIGN_POST);
+        ItemStack item = new ItemStack(Material.SIGN);
         ItemMeta meta = item.getItemMeta();
 
         meta.setDisplayName("TeamName");

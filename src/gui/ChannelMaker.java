@@ -29,7 +29,7 @@ public class ChannelMaker {
     public void setItem(String chName, int max, int min) {
         ArrayList<String> lore = new ArrayList<>();
 
-        ItemStack item = new ItemStack(Material.SIGN_POST);
+        ItemStack item = new ItemStack(Material.SIGN);
         ItemMeta meta = item.getItemMeta();
         meta.setDisplayName("ChannelName");
 

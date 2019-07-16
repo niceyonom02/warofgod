@@ -1,5 +1,6 @@
 package gui;
 
+import listener.GeneralGUIHandler;
 import org.bukkit.Bukkit;
 import org.bukkit.Material;
 import org.bukkit.inventory.Inventory;
@@ -7,13 +8,14 @@ import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 
 public class MainMenu {
-    public static String title = "MainMenur";
+    public static String title = "MainMenu";
     private static MainMenu mainMenu;
     Inventory inventory;
 
     public MainMenu() {
         mainMenu = this;
         inventory = Bukkit.createInventory(null, 27, title);
+        new GeneralGUIHandler();
 
         setItem();
     }
@@ -23,7 +25,7 @@ public class MainMenu {
     }
 
     public void setItem() {
-        ItemStack item = new ItemStack(Material.SIGN_POST);
+        ItemStack item = new ItemStack(Material.SIGN);
         ItemMeta meta = item.getItemMeta();
 
         meta.setDisplayName("ChannelList / Remove channel");
