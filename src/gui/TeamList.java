@@ -2,6 +2,7 @@ package gui;
 
 import channel.Channel;
 import datacontrol.InformationManager;
+import godofwar.GodOfWar;
 import org.bukkit.Bukkit;
 import org.bukkit.Material;
 import org.bukkit.inventory.Inventory;
@@ -19,6 +20,17 @@ public class TeamList {
         this.channel = channel;
         title = channel.getChannelName() + " Team list";
         inventory = Bukkit.createInventory(null, 54, title);
+
+        synchronize();
+    }
+
+    public void synchronize() {
+        Bukkit.getScheduler().scheduleSyncRepeatingTask(GodOfWar.getInstance(), new Runnable() {
+            @Override
+            public void run() {
+                updateItem();
+            }
+        }, 0, 1);
     }
 
     public void updateItem() {
@@ -40,7 +52,10 @@ public class TeamList {
     }
 
     public Inventory getInventory() {
-        updateItem();
         return inventory;
+    }
+
+    public String getTitle() {
+        return title;
     }
 }

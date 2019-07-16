@@ -15,7 +15,7 @@ public class ChannelMaker {
     Inventory inventory;
     private ChannelMakerHandler evHandler;
 
-    public ChannelMaker() {
+    private ChannelMaker() {
         inventory = Bukkit.createInventory(null, InventoryType.HOPPER, makerName);
         setItem(null, 0, 0);
 

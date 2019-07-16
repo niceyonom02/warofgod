@@ -75,6 +75,10 @@ public class GodOfWar extends JavaPlugin {
         return null;
     }
 
+    public void unregisterChannel(Channel channel) {
+        channelList.remove(channel);
+    }
+
     public ArrayList<Channel> getChannelList() {
         return channelList;
     }

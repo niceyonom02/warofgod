@@ -1,7 +1,6 @@
 package datacontrol;
 
 import ability.None;
-import channel.Channel;
 import org.bukkit.entity.Player;
 import team.Team;
 import util.PlayerWrapper;
@@ -61,8 +60,21 @@ public class AccessManager {
         }
     }
 
-    public void registerTeam(Channel channel, Team team) {
-        channel.getGameManager().getDataContainer().getTeamList().add(team);
+    public Team searchTeam(String teamName) {
+        for (Team team : dataContainer.getTeamList()) {
+            if (team.getTeamName().equalsIgnoreCase(teamName)) {
+                return team;
+            }
+        }
+        return null;
+    }
+
+    public void registerTeam(Team team) {
+        dataContainer.getTeamList().add(team);
+    }
+
+    public void unregisterTeam(Team team) {
+        dataContainer.getTeamList().remove(team);
     }
 
 

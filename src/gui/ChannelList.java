@@ -20,7 +20,16 @@ public class ChannelList {
         channelList = this;
         inventory = Bukkit.createInventory(null, 54, title);
 
-        updateItem();
+        synchronize();
+    }
+
+    public void synchronize() {
+        Bukkit.getScheduler().scheduleSyncRepeatingTask(GodOfWar.getInstance(), new Runnable() {
+            @Override
+            public void run() {
+                updateItem();
+            }
+        }, 0, 1);
     }
 
     public static ChannelList getChannelList() {
@@ -47,7 +56,6 @@ public class ChannelList {
     }
 
     public Inventory getInventory() {
-        updateItem();
         return inventory;
     }
 }
