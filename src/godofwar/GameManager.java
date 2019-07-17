@@ -27,6 +27,10 @@ public class GameManager {
         dataContainer.getStatusManager().clear();
         dataContainer.getStatusManager().setStatus(WAIT);
         dataContainer.getTeamManager().restoreTeamList(chanName);
+        if (!dataContainer.getLocationManager().integrityCheck()) {
+            dataContainer.getStatusManager().setStatus(ERROR);
+            return;
+        }
 
         waitScheduler();
     }

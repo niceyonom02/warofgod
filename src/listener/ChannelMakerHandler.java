@@ -156,6 +156,7 @@ public class ChannelMakerHandler implements Listener {
     }
 
     private boolean validate() {
-        return !(channelName == null) && maxMember > minMember && minMember > 1;
+        return (channelName != null) && (maxMember > minMember) && (minMember > 1) && (GodOfWar.getInstance().getChannel(channelName) == null)
+                && (GodOfWar.getInstance().getChannelList().size() < 8);
     }
 }

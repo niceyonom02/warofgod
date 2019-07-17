@@ -5,6 +5,8 @@ import org.bukkit.entity.Player;
 import team.Team;
 import util.PlayerWrapper;
 
+import static godofwar.Status.ERROR;
+
 public class AccessManager {
     private DataContainer dataContainer;
 
@@ -15,7 +17,9 @@ public class AccessManager {
     }
 
     public void join(Player player) {
-        if (dataContainer.getWrapperManager().isPlayerRan(player)) {
+        if (dataContainer.getStatus().equals(ERROR)) {
+            player.sendMessage("Some location is not found. Call the administrator.");
+        } else if (dataContainer.getWrapperManager().isPlayerRan(player)) {
             player.sendMessage("Reconnect to game..");
             reconnect(player);
         } else if (dataContainer.getStatusManager().isGameStarted()) {

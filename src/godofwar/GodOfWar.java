@@ -18,6 +18,8 @@ public class GodOfWar extends JavaPlugin {
     private ArrayList<Channel> channelList;
     private WorldEditPlugin worldEdit;
     private Location copyLOC;
+    private InGameCommand inGameCommand = new InGameCommand();
+    private LocationCommand locationCommand = new LocationCommand();
 
     @Override
     public void onEnable(){
@@ -30,8 +32,11 @@ public class GodOfWar extends JavaPlugin {
         }
 
         if(worldEdit != null){
-            getCommand("gow").setExecutor(new InGameCommand());
-            getCommand("t").setExecutor(new InGameCommand());
+            getCommand("gow").setExecutor(inGameCommand);
+            getCommand("t").setExecutor(inGameCommand);
+            getCommand("gow").setExecutor(locationCommand);
+            getCommand("t").setExecutor(locationCommand);
+
 
             channelList = ChannelLoader.load();
         }

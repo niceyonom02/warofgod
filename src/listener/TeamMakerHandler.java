@@ -18,7 +18,6 @@ import java.util.HashMap;
 import java.util.UUID;
 
 public class TeamMakerHandler implements Listener {
-    int maxMember;
     String prefix = null;
     String teamName = null;
     boolean closedByPlayer = true;
@@ -132,6 +131,8 @@ public class TeamMakerHandler implements Listener {
     }
 
     private boolean validate() {
-        return !(teamName == null) && !(prefix == null);
+        return (teamName != null) && (teamMaker.getChannel().getAccessManager().searchTeam(teamName) == null)
+                && (teamMaker.getChannel().getGameManager().getDataContainer().getTeamManager().getTeamList().size() < 8)
+                && (prefix != null);
     }
 }

@@ -18,6 +18,7 @@ public class DataContainer {
     private Status status = WAIT;
     private int maxMember;
     private int minMember;
+    private String channelName;
 
     private TpManager tpManager;
     private AccessManager accessManager;
@@ -25,12 +26,14 @@ public class DataContainer {
     private StatusManager statusManager;
     private TeamManager teamManager;
     private AllocateManager allocateManager;
+    private LocationManager locationManager;
 
     private Location lobbyLOC;
     private Location waitLOC;
     private Location pasteLOC;
 
-    public DataContainer(int maxMember, int minMember, ArrayList<Team> teamList, ArrayList<Ability> ablityList, Location lobbyLOC, Location waitLOC, Location pastLOC) {
+    public DataContainer(String channelName, int maxMember, int minMember, ArrayList<Team> teamList, ArrayList<Ability> ablityList, Location lobbyLOC, Location waitLOC, Location pastLOC) {
+        this.channelName = channelName;
         this.maxMember = maxMember;
         this.minMember = minMember;
         this.abilityList = ablityList;
@@ -45,6 +48,19 @@ public class DataContainer {
         statusManager = new StatusManager(this);
         teamManager = new TeamManager(this);
         allocateManager = new AllocateManager(this);
+        locationManager = new LocationManager(this, channelName);
+    }
+
+    protected void setLobbyLocation(Location loc) {
+        lobbyLOC = loc;
+    }
+
+    protected void setWaitLocation(Location loc) {
+        waitLOC = loc;
+    }
+
+    public LocationManager getLocationManager() {
+        return locationManager;
     }
 
     protected Location getLobbyLOC() {

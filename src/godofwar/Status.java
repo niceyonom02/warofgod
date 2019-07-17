@@ -1,5 +1,5 @@
 package godofwar;
 
 public enum Status {
-    WAIT, READY, PROGRESS, END
+    WAIT, READY, PROGRESS, END, ERROR
 }

@@ -20,7 +20,7 @@ public class TeamList {
     public TeamList(Channel channel) {
         this.channel = channel;
         title = channel.getChannelName() + " Team list";
-        inventory = Bukkit.createInventory(null, 54, title);
+        inventory = Bukkit.createInventory(null, 9, title);
 
         new TeamListHandler(channel);
 

@@ -23,7 +23,7 @@ public class ChannelLoader {
             Location waitLOC = (Location) GodOfWar.getInstance().getConfig().get(key + ".waitLOC");
             Location pasteLOC = (Location) GodOfWar.getInstance().getConfig().get(key + ".pasteLOC");
 
-            DataContainer dataContainer = new DataContainer(maxMember, minMember, teamList, ablist, lobbyLOC, waitLOC, pasteLOC);
+            DataContainer dataContainer = new DataContainer(key, maxMember, minMember, teamList, ablist, lobbyLOC, waitLOC, pasteLOC);
 
             Channel channel = new Channel(key, dataContainer);
             list.add(channel);

@@ -30,4 +30,12 @@ public class Team {
     public String getTeamName() {
         return teamName;
     }
+
+    public void setTeamSpawn(Location loc) {
+        teamSpawn = loc;
+    }
+
+    public void setTeamCore(Location loc) {
+        teamCore = loc;
+    }
 }

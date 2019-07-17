@@ -18,7 +18,7 @@ public class ChannelList {
 
     public ChannelList() {
         channelList = this;
-        inventory = Bukkit.createInventory(null, 54, title);
+        inventory = Bukkit.createInventory(null, 9, title);
 
         synchronize();
     }
