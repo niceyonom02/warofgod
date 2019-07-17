@@ -53,6 +53,12 @@ public class TeamList {
             item.setItemMeta(meta);
             inventory.setItem(i, item);
         }
+
+        item = new ItemStack(Material.ARROW);
+        meta = item.getItemMeta();
+        meta.setDisplayName("back to channel menu");
+        item.setItemMeta(meta);
+        inventory.setItem(8, item);
     }
 
     public Inventory getInventory() {

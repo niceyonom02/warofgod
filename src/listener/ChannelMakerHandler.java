@@ -89,7 +89,7 @@ public class ChannelMakerHandler implements Listener {
                 behavior.put(player.getUniqueId(), "min");
             } else if (slot == 3) {
                 if (validate()) {
-                    DataContainer dataContainer = new DataContainer(maxMember, minMember, new ArrayList<>(), AbilityManager.getAbilityList(), null, null, null);
+                    DataContainer dataContainer = new DataContainer(channelName, maxMember, minMember, new ArrayList<>(), AbilityManager.getAbilityList(), null, null, null);
                     Channel channel = new Channel(channelName, dataContainer);
                     behavior.clear();
                     GodOfWar.getInstance().registerChannel(channel);

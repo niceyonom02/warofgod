@@ -20,7 +20,7 @@ public class ChannelMenu {
         inventory = Bukkit.createInventory(null, 27, title);
 
         new ChannelMenuHandler(channel);
-        teamList = new TeamList(channel);
+        teamList = new TeamList(channel, this);
 
         setItem();
     }
