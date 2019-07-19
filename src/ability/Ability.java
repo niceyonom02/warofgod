@@ -7,11 +7,7 @@ public interface Ability {
 
     void onRightClick(Player player);
 
-    void passive(Player player);
-
     void registerPassive();
-
-    void unregisterPassive();
 
     boolean validateLeftClick(Player player);
 

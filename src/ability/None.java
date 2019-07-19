@@ -9,11 +9,6 @@ public class None implements Ability {
     }
 
     @Override
-    public void unregisterPassive() {
-
-    }
-
-    @Override
     public boolean validateLeftClick(Player player) {
         return false;
     }
@@ -40,11 +35,6 @@ public class None implements Ability {
 
     @Override
     public void onRightClick(Player player) {
-
-    }
-
-    @Override
-    public void passive(Player player) {
 
     }
 

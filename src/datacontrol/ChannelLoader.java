@@ -5,7 +5,6 @@ import channel.Channel;
 import godofwar.GodOfWar;
 import org.bukkit.Location;
 import team.Team;
-import util.AbilityManager;
 
 import java.util.ArrayList;
 
@@ -15,7 +14,7 @@ public class ChannelLoader {
 
         for(String key : GodOfWar.getInstance().getConfig().getKeys(false)){
             ArrayList<Team> teamList = loadTeams(key);
-            ArrayList<Ability> ablist = AbilityManager.getAbilityList();
+            ArrayList<Ability> ablist = GodOfWar.getInstance().getAbilityList();
 
             int maxMember = GodOfWar.getInstance().getConfig().getInt(key + ".maxMember");
             int minMember = GodOfWar.getInstance().getConfig().getInt(key + ".minMember");

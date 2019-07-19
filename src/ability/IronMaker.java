@@ -29,17 +29,7 @@ public class IronMaker implements Ability{
     }
 
     @Override
-    public void passive(Player player){
-
-    }
-
-    @Override
     public void registerPassive() {
-
-    }
-
-    @Override
-    public void unregisterPassive() {
 
     }
 

@@ -39,13 +39,20 @@ public class TeamList {
     public void updateItem() {
         inventory.clear();
 
-        ItemStack item = new ItemStack(Material.EMERALD);
+        ItemStack item;
         ItemMeta meta;
         ArrayList<String> lore;
+
+        item = new ItemStack(Material.ARROW);
+        meta = item.getItemMeta();
+        meta.setDisplayName("back to channel menu");
+        item.setItemMeta(meta);
+        inventory.setItem(8, item);
 
         for (int i = 0; i < channel.getGameManager().getDataContainer().getTeamManager().getTeamList().size(); i++) {
             lore = InformationManager.getTeamLore(channel, channel.getGameManager().getDataContainer().getTeamManager().getTeamList().get(i));
 
+            item = new ItemStack(Material.EMERALD);
             meta = item.getItemMeta();
             meta.setDisplayName(channel.getGameManager().getDataContainer().getTeamManager().getTeamList().get(i).getTeamName());
             meta.setLore(lore);
@@ -53,12 +60,6 @@ public class TeamList {
             item.setItemMeta(meta);
             inventory.setItem(i, item);
         }
-
-        item = new ItemStack(Material.ARROW);
-        meta = item.getItemMeta();
-        meta.setDisplayName("back to channel menu");
-        item.setItemMeta(meta);
-        inventory.setItem(8, item);
     }
 
     public Inventory getInventory() {

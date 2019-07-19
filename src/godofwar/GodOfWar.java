@@ -1,5 +1,6 @@
 package godofwar;
 
+import ability.Ability;
 import channel.Channel;
 import com.sk89q.worldedit.bukkit.WorldEditPlugin;
 import datacontrol.ChannelLoader;
@@ -10,6 +11,7 @@ import org.bukkit.Bukkit;
 import org.bukkit.Location;
 import org.bukkit.plugin.Plugin;
 import org.bukkit.plugin.java.JavaPlugin;
+import util.AbilityManager;
 
 import java.util.ArrayList;
 
@@ -21,14 +23,18 @@ public class GodOfWar extends JavaPlugin {
     private InGameCommand inGameCommand = new InGameCommand();
     private LocationCommand locationCommand = new LocationCommand();
 
+    private ArrayList<Ability> ablist = AbilityManager.getAbilityList();
+
     @Override
     public void onEnable(){
         instance = this;
+        passiveRegister();
         setupWorldEdit();
 
         if(!instance.getDataFolder().exists()){
             instance.getDataFolder().mkdir();
             instance.saveResource("config.yml", false);
+            instance.saveResource("messages.yml", false);
         }
 
         if(worldEdit != null){
@@ -43,6 +49,16 @@ public class GodOfWar extends JavaPlugin {
 
         new MainMenu();
         new ChannelList();
+    }
+
+    public void passiveRegister() {
+        for (Ability ability : ablist) {
+            ability.registerPassive();
+        }
+    }
+
+    public ArrayList<Ability> getAbilityList() {
+        return ablist;
     }
 
     private void setupWorldEdit() {

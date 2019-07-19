@@ -33,14 +33,14 @@ public class TeamListHandler implements Listener {
         }
 
         if (e.getInventory().getName().equalsIgnoreCase(channel.getChannelMenu().getTeamList().getTitle())) {
+            e.setCancelled(true);
             Player player = (Player) e.getWhoClicked();
 
             if (e.getSlot() == 8) {
                 player.closeInventory();
                 player.openInventory(channel.getChannelMenu().getInventory());
+                return;
             }
-
-            e.setCancelled(true);
 
             if (e.getClick().equals(ClickType.SHIFT_LEFT) || e.getClick().equals(ClickType.SHIFT_RIGHT)) {
                 ItemStack item = e.getCurrentItem();
